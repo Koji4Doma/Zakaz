@@ -1,0 +1,190 @@
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background-color: #4a83ee;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Поиск по сайту */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative; /* Для позиционирования значка */
+}
+
+.search {
+  width: 50%;
+  padding: 10px 40px 10px 10px; /* Добавляем отступ справа для значка */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  max-width: 1500px;
+  box-sizing: border-box; /* Чтобы padding не выходил за пределы */
+}
+
+/* Значок лупы */
+.search-icon {
+  position: relative;
+  right: 40px; /* Располагаем иконку справа */
+  top: -30%;
+  transform: translateY(20%);
+  font-size: 25px;
+  color: #4a83ee; /* Цвет иконки */
+}
+
+/* Кнопки на главной */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.button-animate {
+  padding: 15px 30px;
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a83ee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.button-animate i {
+  margin-right: 10px;
+}
+
+.button-animate:hover {
+  transform: scale(1.05); /* Уменьшение эффекта приближения */
+  background-color: #4a83ee;
+}
+
+/* Контейнер для фильтров, карты и сервисов */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  gap: 20px;  /* Добавим пространство между элементами */
+  flex-wrap: wrap;
+}
+
+/* Фильтры */
+.filters {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.filters h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.filter-options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-options select,
+.filter-options input,
+.filter-options button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-options button {
+  background-color: #4a83ee;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-options button:hover {
+  background-color: #4a83ee;
+}
+
+/* Карта */
+.map {
+  flex: 2;
+  min-width: 600px;
+}
+
+.map iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Сервисы */
+.services {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.service-button {
+  display: block;
+  margin-bottom: 12px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a83ee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.service-button i {
+  margin-right: 10px;
+}
+
+.service-button:hover {
+  transform: scale(1.05); /* Уменьшение эффекта приближения */
+  background-color: #005bb5;
+}
+
+/* Список объявлений */
+.ads {
+  padding: 20px 30px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ads h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
